@@ -128,7 +128,28 @@ footer{background:#00251a;color:white;text-align:center;padding:25px;margin-top:
 </footer>
 
  <!-- MUBASHIR BROTHERS 3 Floating Buttons -->
-<style>
+<styl131 <style>
+132 .float-btn {
+133     position: fixed;
+134     width: 55px;
+135     height: 55px;
+136     right: 20px;
+137     border-radius: 50%;
+138     display: flex;
+139     align-items: center;
+140     justify-content: center;
+141     color: #FFF;
+142     font-size: 28px;
+143     text-decoration: none;
+144     box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+145     z-index: 9999;
+146 }
+147 .btn-call { background-color: #007bff; bottom: 160px; }
+148 .btn-whatsapp { background-color: #25D366; bottom: 90px; }
+149 .btn-map { background-color: #DB4437; bottom: 20px; }
+150 .float-btn:hover { transform: scale(1.1); }
+151 </style>
+152 
 153 <!-- Call Button -->
 154 <a href="tel:03017478655" class="float-btn btn-call">📞</a>
 155 
@@ -137,19 +158,4 @@ footer{background:#00251a;color:white;text-align:center;padding:25px;margin-top:
 158 
 159 <!-- Google Map Button -->
 160 <a href="https://www.google.com/maps/search/?api=1&query=MUBASHIR+BROTHERS+Multan" class="float-btn btn-map" target="_blank">📍</a>
-  color: #FFF;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 24px;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
-  z-index: 9999;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-}
-.btn-call { background-color: #007bff; bottom: 160px; }
-.btn-whatsapp { background-color: #25D366; bottom: 90px; }
-.btn-map { background-color: #DB4437; bottom: 20px; }
-.float-btn:hover { transform: scale(1.1); }
-</style>
 
