@@ -7,18 +7,18 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:100%;overflow-x:hidden}
-body{background:#f8fafc;color:#1e293b;line-height:1.6;font-family:Arial,sans-serif}
+body{background:#f8fafc;color:#1e293b;line-height:1.6;font-family:Arial,sans-serif;padding-bottom:70px}
 a{text-decoration:none}
 header{background:#fff;padding:12px 5%;display:flex;justify-content:space-between;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,.08);position:sticky;top:0;z-index:99;width:100%}
 .logo{display:flex;align-items:center;gap:10px}
-.logo .mini-logo{width:48px;height:48px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #ffe27a, #d4a017 60%, #8a6d00);border:2px solid #1a2a6c;display:flex;align-items:center;justify-content:center;color:#1a2a6c;font-weight:900;font-size:18px;font-family:Georgia,serif;flex-shrink:0}
+.logo svg{width:48px;height:48px;flex-shrink:0}
 .logo b{font-size:19px;color:#0a1f3a;line-height:1.1}
 .logo small{display:block;font-size:11px;color:#f97316;letter-spacing:1px}
 nav a{margin-left:14px;color:#334155;font-weight:600;font-size:15px}
-.hero{background:#0a2a5e;color:#fff;padding:45px 5%;text-align:center;width:100%}
-.hero .mb-logo{width:125px;height:125px;border-radius:50%;background:radial-gradient(circle at 30% 30%, #fff2a8, #e6c200 55%, #a88600);border:5px solid #1a2a6c;display:flex;align-items:center;justify-content:center;color:#1a2a6c;font-size:52px;font-weight:900;font-family:Georgia,serif;margin:0 auto 14px;box-shadow:0 0 0 3px #fff, 0 6px 20px rgba(0,0,0,.4)}
-.hero h1{font-size:34px;line-height:1.3}
-.hero h2{color:#ffe600;font-size:19px;line-height:1.7;margin-top:14px;font-weight:800}
+.hero{background:#0a2a5e;color:#fff;padding:40px 5% 30px;text-align:center;width:100%}
+.hero svg{width:130px;height:130px;display:block;margin:0 auto 14px;background:#fff;border-radius:50%;border:4px solid #fff}
+.hero h1{font-size:32px;line-height:1.3}
+.hero h2{color:#ffe600;font-size:18px;line-height:1.8;margin-top:14px;font-weight:800}
 .btn{display:inline-block;padding:12px 22px;border-radius:30px;font-weight:700;margin:6px;font-size:15px}
 .btn-orange{background:#f97316;color:#fff}
 .btn-white{background:#fff;color:#0a1f3a}
@@ -47,22 +47,24 @@ footer h3{color:#f97316;font-size:20px}
 footer p{color:#cbd5e1;font-size:15px;line-height:1.9;margin-top:8px}
 footer a{color:#ffe600;font-weight:700}
 .copy{text-align:center;margin-top:22px;border-top:1px solid #1e3a5f;padding-top:16px;color:#94a3b8;font-size:13px}
-.float{position:fixed;right:14px;bottom:16px;display:flex;flex-direction:column;gap:10px;z-index:999}
-.float a{width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:22px;color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.float{position:fixed;left:0;right:0;bottom:0;background:#fff;display:flex;justify-content:center;gap:10px;padding:8px 5px;box-shadow:0 -2px 12px rgba(0,0,0,.15);z-index:999}
+.float a{flex:1;max-width:120px;height:42px;border-radius:25px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff}
 .wa{background:#25D366}.call{background:#0a1f3a}.loc{background:#e11d48}.mail{background:#2563eb}
 @media(min-width:700px){.grid{grid-template-columns:repeat(3,1fr)}.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.gallery div{margin:0}}
-@media(max-width:600px){.hero h1{font-size:28px}.hero h2{font-size:17px} nav{display:none}.grid{grid-template-columns:1fr}}
+@media(max-width:600px){.hero h1{font-size:28px}.hero h2{font-size:17px} nav{display:none}.grid{grid-template-columns:1fr}.float a{font-size:12px}}
 </style>
 </head>
 <body>
 
 <header>
-<div class="logo"><div class="mini-logo">MB</div><div><b>Mubashir Brothers</b><small>GOVT REGISTERED</small></div></div>
+<div class="logo">
+<svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="#0a245c"/><circle cx="100" cy="100" r="72" fill="#f5c400"/><circle cx="100" cy="100" r="68" fill="none" stroke="#0a245c" stroke-width="2"/><text x="100" y="118" text-anchor="middle" font-size="62" font-weight="900" fill="#0a245c" font-family="Georgia,serif">MB</text><text x="100" y="162" text-anchor="middle" font-size="22" fill="#c9a800">★</text><g fill="#f5c400" font-size="14"><text x="100" y="22" text-anchor="middle">★</text><text x="152" y="36" text-anchor="middle">★</text><text x="184" y="82" text-anchor="middle">★</text><text x="184" y="130" text-anchor="middle">★</text><text x="152" y="172" text-anchor="middle">★</text><text x="100" y="188" text-anchor="middle">★</text><text x="48" y="172" text-anchor="middle">★</text><text x="16" y="130" text-anchor="middle">★</text><text x="16" y="82" text-anchor="middle">★</text><text x="48" y="36" text-anchor="middle">★</text></g></svg>
+<div><b>Mubashir Brothers</b><small>GOVT REGISTERED</small></div></div>
 <nav><a href="#">Home</a><a href="#services">Services</a><a href="#projects">Projects</a><a href="#contact">Contact</a></nav>
 </header>
 
 <div class="hero">
-<div class="mb-logo">MB</div>
+<svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="98" fill="#0a245c"/><circle cx="100" cy="100" r="72" fill="#f5c400"/><circle cx="100" cy="100" r="68" fill="none" stroke="#0a245c" stroke-width="2"/><text x="100" y="118" text-anchor="middle" font-size="62" font-weight="900" fill="#0a245c" font-family="Georgia,serif">MB</text><text x="100" y="162" text-anchor="middle" font-size="22" fill="#c9a800">★</text><g fill="#f5c400" font-size="14"><text x="100" y="22" text-anchor="middle">★</text><text x="152" y="36" text-anchor="middle">★</text><text x="184" y="82" text-anchor="middle">★</text><text x="184" y="130" text-anchor="middle">★</text><text x="152" y="172" text-anchor="middle">★</text><text x="100" y="188" text-anchor="middle">★</text><text x="48" y="172" text-anchor="middle">★</text><text x="16" y="130" text-anchor="middle">★</text><text x="16" y="82" text-anchor="middle">★</text><text x="48" y="36" text-anchor="middle">★</text></g></svg>
 <h1>MUBASHIR<br>BROTHERS</h1>
 <h2>PAK ARMY & GOVERNMENT<br>CONTRACTOR<br>GENERAL ORDER SUPPLIER<br>COOLING POINT & CCTV<br>SOLAR SERVICES</h2>
 <br>
@@ -143,10 +145,10 @@ footer a{color:#ffe600;font-weight:700}
 </footer>
 
 <div class="float">
-<a class="wa" href="https://wa.me/923017478655">💬</a>
-<a class="call" href="tel:03017478655">📞</a>
-<a class="loc" href="https://www.google.com/maps/search/?api=1&query=5+Marla+Scheme+Front+Alfalah+Defense+Matital+Road+Multan">📍</a>
-<a class="mail" href="mailto:info@mubashirbrothers.com">✉️</a>
+<a class="wa" href="https://wa.me/923017478655">WhatsApp</a>
+<a class="call" href="tel:03017478655">Call</a>
+<a class="loc" href="https://www.google.com/maps/search/?api=1&query=5+Marla+Scheme+Front+Alfalah+Defense+Matital+Road+Multan">Location</a>
+<a class="mail" href="mailto:info@mubashirbrothers.com">Email</a>
 </div>
 
 </body>
